@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exxen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Poppins', sans-serif !important;
+    }
+    html,body{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    /* HEADER START  */
+    .color-exxen{
+        background-color: #ffcb04;
+    }
+    .logo-exxen{
+        height: 10vh;
+    }
+
+    .nav-buttons{
+
+    }
+    .btn-exxen{
+        padding: 10px 0px;
+        background-color: black;
+        color: #ffcb04;
+        font-weight: 600;
+        font-size: 1.2vw;
+    }
+    .btn-login{
+        padding: 10px 0px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 1vw;
+        margin: 0px 20px;
+
+    }
+    .slt-lang{
+        padding-left: 20px;
+        font-size: 1.2vw;
+        background-color: transparent;
+        border: none;
+    }
+    .icon-lang{
+        width: 18px;
+        position: absolute;
+        top:13px;
+    }
+    /* HEADER END  */
+    /* BOTTOM NAV START */
+    .bottom-nav{
+        padding: 4vh 0px;
+        justify-content: center;
+        background-color: #111;
+        
+    }
+    .bottom-nav ::placeholder{
+        font-weight: 600;
+        color: #111;
+        font-size: 1vw;
+    }
+    .inp-nav{
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+    
+    .btn-nav{
+        width: 100%;
+        height: 100%;
+        padding: 7px 20px;
+        background-color: #ffcb04;
+        font-size: 1.5vw;
+        font-weight: 600;
+
+    }
+     /* MAİN START  */
+    .card{
+        background: #000;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .card-img{position: relative;
+        box-shadow: 0px 0px 20px 0px  rgba(255, 255, 255, 0.247);
+    }    
+    .card-img-play{
+        width: 20%;
+        position: absolute;
+        bottom: 15%;
+        left:42%;
+        transition: all .4s;
+    }
+    .card-img:hover .card-img-play{
+        scale: 1.2;
+        
+    }
+      
+    .card-title{
+        padding-top: 10px;
+        text-align: center;
+        color: white;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
+     /* MAİN END */
+
+     /* FOOTER START */
+
+     .footer-text{
+        text-align: center;
+        color: white;
+        font-size: 2.1vw;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+     }
+
+     .footer-img{}
+     .footer-img img{
+        width: 100%;
+        
+     }
+
+     .footer-social{
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        border-radius: 10px;
+        background: black;
+        box-shadow: 0px 0px 10px 0 px white;
+        position: relative;
+        overflow: hidden;
+     }
+
+
+
+     .footer-social img{
+        width: 40px;
+     }
+
+     .help{
+        color: #ffcb04;
+        padding: 0px 30px;
+        height: 30px;
+        font-size: 1.5vw;
+        font-weight: 600;
+
+     }
+
+
+     /* FOOTER END */
+
+     /* MEDIA START */
+
+     @media screen and (max-width:1200px) {
+
+
+    .btn-exxen{
+        
+    }
+
+
+}
+
+
+     @media screen and (max-width:992px) {
+
+        .nav-buttons{
+            width: 20px;
+            justify-content: end;
+            padding-right: 60px;        }
+
+        .inp-nav::placeholder{
+            font-size: 1.5vw;
+        }
+        .inp-nav{
+            height: 80%;
+        }
+
+        .footer-text{
+
+            font-size: 3vw;
+
+        }
+        
+     }
+
+     /* MEDIA END */
+
+
+    </style>
+</head>
+<body>
+    <!-- HEADER START  -->
+    <header>
+        <div class="row justify-content-center align-items-center color-exxen py-3">
+            <div class="col-8">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand"><img class="logo-exxen" src="img/logo-web.svg" alt=""></a>
+                        <div class="row nav-buttons">
+                            <button  class="btn-exxen col-6 d-none d-lg-block ">EXXENSPOR Ticari üye ol</button>
+                            <button class="btn-login col-lg-3 col-5">Üye Girişi</button>
+                            <div class="position-relative d-flex col-1">
+                                <img class="icon-lang" src="img/lang-icon.svg" alt="">
+                                <select  class= "slt-lang"name="" id="">
+                                    <option value="1">TR</option>
+                                    <option value="2">ENG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button  class="btn-exxen col-12 d-block d-lg-none ">EXXENSPOR Ticari üye ol</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- BOTTOM NAV START  -->
+    <div class="container-fluid">
+        <div class="row bottom-nav">
+            <form class="row col-8">
+                <div class="col-lg-4 col-12 my-lg-0 my-2">
+                    <input class="inp-nav" type="text" placeholder="adı soyadı">
+                </div>
+                <div class="col-lg-4 col-12 my-lg-0 my-2">
+                    <input class="inp-nav" type="text" placeholder="E-posta Adresi">
+                </div>
+                <div class="col-lg-4 col-12 my-lg-0 my-2 ">
+                    <button class="btn-nav py-lg-0 py-3">7 gün EXXEN Üyeiği 1 TL</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- BOTTOM NAV END -->
+
+    <!-- MAİN START  -->
+    <main>
+        <div class="container-fluid bg-black">
+            <div class="row justify-content-center">
+                <div class=" row col-8">
+                    <div class="col-12 my-5">
+                        <img class="w-100" src="img/14gun.webp" alt="">
+                    </div>
+                    <!-- CARD 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster2.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster3.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster4.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster5.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster6.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster7.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img class="w-100" src="img/Poster8.webp" alt="">
+                                    <img class="card-img-play" src="img/button-detail.svg" alt="">
+                                </div>
+                                <div class="card-title">Şampiyonlar Lİgi</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- MAİN END -->
+
+    <!--FOOTER START  -->
+
+    <footer>
+        <div class="container-fluid bg-black">
+            <div class="row justify-content-center">
+                <div class="row col-8 justify-content-center">
+                    <div class="col-xl-5 col-md-8 col-10 mt-4">
+                        <img class="w-100" src="img/devices.svg" alt="">
+                    </div>
+
+                    <div class="col-12 mt-4">
+
+                        <h4 class="footer-text">Hemen üye ol, cepte, tablette, bilgisayarda, istediğin zaman, istediğin yerde exxen.com, Google Play, AppGallery, App Store, Apple TV ve Android TV'den izlemeye başla. </h4>
+
+                    </div>
+                    <div class="row col-sm-8  col-10mt-4">
+                       <div class="footer-img col-lg-4 col-12 m-lg-0 my-2">
+                        <img class="w-100" src="img/google-play@3x.png" alt="">
+                       </div>
+                       <div class="footer-img col-lg-4 col-12 m-lg-0 my-2">
+                        <img class="w-100" src="img/app-store-2.svg" alt="">
+                       </div>
+                       <div class="footer-img col-lg-4 col-12 m-lg-0 my-2">
+                        <img class="w-100" src="img/huawei-app-gallery@3x.png" alt="">
+                       </div>
+                    </div>
+
+                    <div class="row col-sm-6 col-10 gap-3 justify-content-center my-5">
+                       
+                        <div class="footer-social col-2">
+                            <a href=""><img src="img/instagram.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-social col-2">
+                            <a href=""><img src="img/twitter.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-social col-2">
+                            <a href=""><img src="img/facebook.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-social col-2">
+                            <a href=""><img src="img/youtube.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-social col-2">
+                            <a href=""><img src="img/tiktok.svg" alt=""></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 text-center mb-5 py-3" style="background-color: #111;">
+                        <a class="help" href="">Exxen Yardım Merkezi</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- FOOTER END -->
+            
+                
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
